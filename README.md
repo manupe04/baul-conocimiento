@@ -1,13 +1,14 @@
 # BAÚL — Biblioteca de conocimiento personal
 
-Sitio web estático en español, sin frameworks, servidores ni claves API. Curado a partir de las lecturas y recursos que organizamos para ocho áreas de estudio: filosofía, economía, política, inversiones, relaciones, startups de software, software/datos/IA y finanzas cuantitativas.
+Sitio web estático en español, sin frameworks, servidores ni claves API. Curado a partir de las lecturas y recursos que organizamos para nueve áreas de estudio: filosofía, economía, política, historia argentina, inversiones, relaciones, startups de software, software/datos/IA y finanzas cuantitativas.
 
 ## Qué incluye
 
-- **179 entradas** distribuidas en **8 áreas** (175 recursos únicos; algunas lecturas figuran en más de un área).
+- **202 entradas** distribuidas en **9 áreas** (198 recursos únicos; algunas lecturas figuran en más de un área).
 - Dos niveles de biblioteca por área: **lectura básica** (P1 + P2) y **luego de la base** (P3).
 - Tres prioridades: **P1 Esencial**, **P2 Importante**, **P3 Profundización**.
 - Rutas de inicio con una selección de libros por área.
+- **Historia argentina:** filtro por historia política, historia económica y fuentes/documentos. Contiene 23 recursos con links verificables.
 - Búsqueda global, filtros por prioridad, tipo y estado, y ordenación.
 - Estado de cada recurso: pendiente, en curso, terminado.
 - Guardados personales, notas por recurso y posibilidad de añadir recursos propios.
@@ -72,3 +73,9 @@ El catálogo y el código estarán visibles si usás GitHub Pages con repositori
 La clasificación de prioridades es una **curaduría pedagógica**, no un ranking objetivo de corrientes o autores. Las recomendaciones se nutren de nuestra conversación y pueden contener ediciones bibliográficas o enlaces que cambien con el tiempo. Los libros sin enlace propio ofrecen una búsqueda bibliográfica en Google, no una copia del contenido ni una promesa de disponibilidad gratuita.
 
 Los recursos de investigación o documentación cambiante deben consultarse en su sitio oficial antes de implementar un proyecto, especialmente en IA, legislación, finanzas, APIs y herramientas cloud.
+
+## Actualización: Historia argentina (octubre de 2026)
+
+Esta edición incorpora **Historia argentina** como novena área, con **23 entradas** distribuidas en los niveles P1, P2 y P3; los primeros seis forman la ruta esencial. La colección integra estudios académicos sobre formación del Estado, federalismo, radicalismo, peronismo, regímenes autoritarios y democracia; análisis económicos sobre comercio, industrialización, deuda y crisis; y documentos del AGN, InfoLEG y BCRA. Los enlaces remiten a editoriales e instituciones originales.
+
+Para actualizar un sitio ya publicado en Cloudflare Pages, entrá al proyecto y utilizá **Create deployment** para subir el ZIP nuevo. Se mantiene el mismo nombre de almacenamiento local y los IDs originales, por lo que los avances existentes deben permanecer en el mismo navegador y dominio. Como medida preventiva exportá el progreso antes de desplegar. Si tenés el sitio abierto en varias pestañas, cerralas y recargá tras el despliegue.

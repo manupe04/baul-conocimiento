@@ -1,6 +1,6 @@
 window.KNOWLEDGE_VAULT = {
   "title": "Baúl de conocimiento",
-  "version": "2026.10",
+  "version": "2026.10-historia",
   "categories": [
     {
       "id": "filosofia",
@@ -113,6 +113,20 @@ window.KNOWLEDGE_VAULT = {
       ],
       "color": "#c4d98f",
       "icon": "sigma"
+    },
+    {
+      "id": "historia",
+      "name": "Historia argentina",
+      "eyebrow": "09 / HISTORIA",
+      "headline": "Comprender la historia argentina",
+      "description": "Historia política y económica desde la época colonial: Estado, democracia, desarrollo, crisis y debates históricos.",
+      "skills": [
+        "Historia política",
+        "Historia económica",
+        "Fuentes y datos"
+      ],
+      "color": "#e0ac78",
+      "icon": "landmark"
     }
   ],
   "resources": [
@@ -2084,6 +2098,282 @@ window.KNOWLEDGE_VAULT = {
       "kind": "Curso y datos",
       "url": "https://pages.stern.nyu.edu/~adamodar/",
       "difficulty": "Avanzado"
+    },
+    {
+      "id": "arg-romero-breve-historia-1916-2016",
+      "area": "historia",
+      "priority": 1,
+      "title": "Breve historia contemporánea de la Argentina (1916–2016)",
+      "author": "Luis Alberto Romero",
+      "why": "Historia política y social · Visión general de radicalismo, peronismo, dictaduras y democracia. Edición definitiva hasta 2016.",
+      "kind": "Libro",
+      "url": "https://fce.com.ar/tienda/historia/breve-historia-contemporanea-de-la-argentina-1916-2016/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-ternavasio-1806-1852",
+      "area": "historia",
+      "priority": 1,
+      "title": "Historia de la Argentina, 1806–1852",
+      "author": "Marcela Ternavasio",
+      "why": "Historia política · Revolución de Mayo, independencia, guerras civiles, federalismo y período rosista.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-de-la-argentina-1806-1852/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-sabato-1852-1890",
+      "area": "historia",
+      "priority": 1,
+      "title": "Historia de la Argentina, 1852–1890",
+      "author": "Hilda Sabato",
+      "why": "Historia política · Organización nacional, Constitución, federalismo, elecciones y formación del Estado.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-de-la-argentina-1852-1890/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-hora-historia-economica-xix",
+      "area": "historia",
+      "priority": 1,
+      "title": "Historia económica de la Argentina en el siglo XIX",
+      "author": "Roy Hora",
+      "why": "Historia económica · Agroexportación, comercio mundial, inmigración, tierra, desarrollo y desigualdades.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-economica-de-la-argentina-en-el-siglo-xix/",
+      "difficulty": "Inicial",
+      "track": "economia"
+    },
+    {
+      "id": "arg-belini-korol-historia-economica-xx-xxi",
+      "area": "historia",
+      "priority": 1,
+      "title": "Historia económica de la Argentina en los siglos XX y XXI",
+      "author": "Claudio Belini y Juan Carlos Korol",
+      "why": "Historia económica · Siglos XX y XXI, industrialización, rol del Estado, ciclos y estancamiento; edición de 2020.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-economica-de-la-argentina/",
+      "difficulty": "Inicial",
+      "track": "economia"
+    },
+    {
+      "id": "arg-gerchunoff-llach-ciclo-ilusion-desencanto",
+      "area": "historia",
+      "priority": 1,
+      "title": "El ciclo de la ilusión y el desencanto",
+      "author": "Pablo Gerchunoff y Lucas Llach",
+      "why": "Historia económica · Políticas económicas desde 1880 hasta 2015; preferir la edición revisada de 2018.",
+      "kind": "Libro",
+      "url": "https://tiendadigital.planetadelibros.com.ar/library/publication/el-ciclo-de-la-ilusion-y-el-desencanto",
+      "difficulty": "Intermedio",
+      "track": "economia"
+    },
+    {
+      "id": "arg-fradkin-garavaglia-colonial",
+      "area": "historia",
+      "priority": 2,
+      "title": "La Argentina colonial: el Río de la Plata entre los siglos XVI y XIX",
+      "author": "Raúl Fradkin y Juan Carlos Garavaglia",
+      "why": "Historia política y social · Formación colonial, economía regional y sociedad antes de la independencia.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/la-argentina-colonial/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-cattaruzza-1916-1955",
+      "area": "historia",
+      "priority": 2,
+      "title": "Historia de la Argentina, 1916–1955",
+      "author": "Alejandro Cattaruzza",
+      "why": "Historia política · Yrigoyen, crisis de 1930, golpes de Estado y surgimiento del peronismo.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-de-la-argentina-1916-1955/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-novaro-1955-2020",
+      "area": "historia",
+      "priority": 2,
+      "title": "Historia de la Argentina, 1955–2020",
+      "author": "Marcos Novaro",
+      "why": "Historia política · Proscripción, dictaduras, transición democrática, reformas y política hasta 2020.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/historia-de-la-argentina-1955-2020/",
+      "difficulty": "Inicial",
+      "track": "politica"
+    },
+    {
+      "id": "arg-botana-orden-conservador",
+      "area": "historia",
+      "priority": 2,
+      "title": "El orden conservador",
+      "author": "Natalio R. Botana",
+      "why": "Historia política · Régimen político de 1880–1916, gobierno representativo, élites y reforma electoral.",
+      "kind": "Libro",
+      "url": "https://www.edhasa.com.ar/product/el-orden-conservador/",
+      "difficulty": "Intermedio",
+      "track": "politica"
+    },
+    {
+      "id": "arg-torre-movimiento-obrero-peronismo",
+      "area": "historia",
+      "priority": 2,
+      "title": "Ensayos sobre movimiento obrero y peronismo",
+      "author": "Juan Carlos Torre",
+      "why": "Historia política y social · Sindicatos, trabajadores y construcción de la identidad política peronista.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/ensayos-sobre-movimiento-obrero-y-peronismo/",
+      "difficulty": "Intermedio",
+      "track": "politica"
+    },
+    {
+      "id": "arg-ferrer-economia-argentina",
+      "area": "historia",
+      "priority": 2,
+      "title": "La economía argentina: desde sus orígenes hasta principios del siglo XXI",
+      "author": "Aldo Ferrer",
+      "why": "Historia económica · Desarrollo nacional e inserción internacional; contrastar su enfoque estructuralista con otros autores.",
+      "kind": "Libro",
+      "url": "https://fce.com.ar/tienda/economia/la-economia-argentina-ferrer/",
+      "difficulty": "Intermedio",
+      "track": "economia"
+    },
+    {
+      "id": "arg-cortesconde-politica-economica-xx",
+      "area": "historia",
+      "priority": 2,
+      "title": "La economía política de la Argentina en el siglo XX",
+      "author": "Roberto Cortés Conde",
+      "why": "Historia económica · Política fiscal y monetaria, inflación, deuda, instituciones y desempeño económico.",
+      "kind": "Libro",
+      "url": "https://www.edhasa.com.ar/product/la-economia-politica-de-la-argentina-en-el-siglo-xx/",
+      "difficulty": "Intermedio",
+      "track": "economia"
+    },
+    {
+      "id": "arg-alberdi-bases",
+      "area": "historia",
+      "priority": 2,
+      "title": "Bases y puntos de partida para la organización política de la República Argentina",
+      "author": "Juan Bautista Alberdi",
+      "why": "Fuente histórica · Proyecto constitucional, organización del Estado, federalismo y desarrollo económico. Leer en contexto de 1852.",
+      "kind": "Libro",
+      "url": "https://bcn.gob.ar/la-biblioteca/publicaciones/coleccion-pensamiento-del-bicentenario/bases-y-puntos-de-partida-para-la-organizacion-politica-de-la-republica-argentina",
+      "difficulty": "Intermedio",
+      "track": "fuentes"
+    },
+    {
+      "id": "arg-constitucion-nacional",
+      "area": "historia",
+      "priority": 2,
+      "title": "Constitución de la Nación Argentina (texto oficial, reforma de 1994)",
+      "author": "Congreso de la Nación / InfoLEG",
+      "why": "Fuente institucional · Federalismo, derechos y garantías, división de poderes y organización constitucional.",
+      "kind": "Documento",
+      "url": "https://www.argentina.gob.ar/normativa/nacional/ley-24430-804/texto",
+      "difficulty": "Inicial",
+      "track": "fuentes"
+    },
+    {
+      "id": "arg-alonso-jardines-secretos",
+      "area": "historia",
+      "priority": 3,
+      "title": "Jardines secretos, legitimaciones públicas",
+      "author": "Paula Alonso",
+      "why": "Historia política · Organización y práctica del Partido Autonomista Nacional, 1880–1916.",
+      "kind": "Libro",
+      "url": "https://www.edhasa.com.ar/product/jardines-secretos-legitimaciones-publicas/",
+      "difficulty": "Avanzado",
+      "track": "politica"
+    },
+    {
+      "id": "arg-sabato-buenos-aires-armas",
+      "area": "historia",
+      "priority": 3,
+      "title": "Buenos Aires en armas: la revolución de 1880",
+      "author": "Hilda Sabato",
+      "why": "Historia política · Conflictividad y enfrentamientos armados en torno a la federalización porteña.",
+      "kind": "Libro",
+      "url": "https://sigloxxieditores.com.ar/libro/buenos-aires-en-armas/",
+      "difficulty": "Avanzado",
+      "track": "politica"
+    },
+    {
+      "id": "arg-alonso-bragoni-sistema-federal",
+      "area": "historia",
+      "priority": 3,
+      "title": "El sistema federal argentino: debates y coyunturas (1860–1910)",
+      "author": "Paula Alonso y Beatriz Bragoni (compiladoras)",
+      "why": "Historia política · Construcción práctica del federalismo, provincias, fiscalidad e instituciones.",
+      "kind": "Libro",
+      "url": "https://www.edhasa.com.ar/product/el-sistema-federal-argentino/",
+      "difficulty": "Avanzado",
+      "track": "politica"
+    },
+    {
+      "id": "arg-economia-de-peron",
+      "area": "historia",
+      "priority": 3,
+      "title": "La economía de Perón (2.ª edición ampliada)",
+      "author": "Roberto Cortés Conde, Gerardo della Paolera, Laura D’Amato y Javier Ortiz Batalla (dirs.)",
+      "why": "Historia económica · Investigaciones y revisión crítica de políticas económicas de 1946–1955.",
+      "kind": "Libro",
+      "url": "https://www.edhasa.com.ar/product/la-economia-de-peron-segunda-edicion-ampliada/",
+      "difficulty": "Avanzado",
+      "track": "economia"
+    },
+    {
+      "id": "arg-belini-historia-industria",
+      "area": "historia",
+      "priority": 3,
+      "title": "Historia de la industria en la Argentina: de la Independencia a la crisis de 2001",
+      "author": "Claudio Belini",
+      "why": "Historia económica · Industrialización, sustitución de importaciones, cambios productivos y crisis.",
+      "kind": "Libro",
+      "url": "https://ravignani.institutos.filo.uba.ar/node/842",
+      "difficulty": "Avanzado",
+      "track": "economia"
+    },
+    {
+      "id": "arg-agn-biblioteca-digital",
+      "area": "historia",
+      "priority": 3,
+      "title": "Biblioteca digital del Archivo General de la Nación",
+      "author": "Archivo General de la Nación",
+      "why": "Fuentes documentales · Libros y folletos históricos digitalizados por el archivo público.",
+      "kind": "Archivo digital",
+      "url": "https://www.argentina.gob.ar/interior/archivo-general-de-la-nacion/biblioteca-digital",
+      "difficulty": "Todos los niveles",
+      "track": "fuentes"
+    },
+    {
+      "id": "arg-agn-fondos-digitalizados",
+      "area": "historia",
+      "priority": 3,
+      "title": "Fondos y colecciones digitalizadas del AGN",
+      "author": "Archivo General de la Nación",
+      "why": "Fuentes documentales · Documentos, cartografía histórica, archivos personales y colecciones temáticas.",
+      "kind": "Archivo digital",
+      "url": "https://www.argentina.gob.ar/interior/archivo-general-de-la-nacion/fondos-y-colecciones-digitalizadas",
+      "difficulty": "Todos los niveles",
+      "track": "fuentes"
+    },
+    {
+      "id": "arg-bcra-series-historicas",
+      "area": "historia",
+      "priority": 3,
+      "title": "Consultas personalizadas de series estadísticas",
+      "author": "Banco Central de la República Argentina",
+      "why": "Datos económicos · Consultar y exportar series históricas monetarias y financieras para análisis propio.",
+      "kind": "Datos",
+      "url": "https://www.bcra.gob.ar/consultas-personalizadas-de-series-estadisticas/",
+      "difficulty": "Intermedio",
+      "track": "fuentes"
     }
   ]
 };
