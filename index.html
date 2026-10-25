@@ -3,34 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#11151b">
+  <meta name="theme-color" content="#f1f2ef">
   <meta name="description" content="Biblioteca personal de conocimiento: filosofía, economía, política, historia argentina, inversiones, relaciones, startups, software, datos, IA y finanzas cuantitativas.">
   <title>Baúl de conocimiento — Biblioteca personal</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="dark">
+<body data-theme="light">
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div class="app-shell" id="appShell">
     <div class="mobile-overlay" id="mobileOverlay" hidden></div>
     <aside class="sidebar" id="sidebar" aria-label="Navegación principal">
       <div class="brand" role="banner">
-        <div class="brand-mark" aria-hidden="true"><span>B</span><span class="mark-dot"></span></div>
-        <div><div class="brand-name">BAÚL<span class="brand-accent">.</span></div><div class="brand-sub">DE CONOCIMIENTO</div></div>
+        <div class="brand-name">Baúl</div>
+        <div class="brand-sub">Biblioteca personal</div>
       </div>
-      <div class="sidebar-caption">TU ESPACIO</div>
       <nav class="nav-group" id="primaryNav" aria-label="Biblioteca"></nav>
-      <div class="sidebar-caption sidebar-caption-areas">ÁREAS DE ESTUDIO</div>
+      <div class="sidebar-caption">Áreas</div>
       <nav class="nav-group area-nav" id="areaNav" aria-label="Áreas"></nav>
       <div class="side-bottom">
-        <div class="daily-card"><div class="daily-eyebrow">UNA IDEA CENTRAL</div><p>Leer para entender. Practicar para aprender. Volver para profundizar.</p><span class="daily-rule"></span></div>
         <div class="sidebar-actions">
           <button id="backupBtn" class="sidebar-utility" type="button" title="Exportar progreso y recursos"><span data-ui-icon="download"></span> Exportar datos</button>
           <button id="importBtn" class="sidebar-utility" type="button" title="Restaurar datos exportados"><span data-ui-icon="upload"></span> Importar datos</button>
           <button id="themeBtn" class="sidebar-utility" type="button"><span data-ui-icon="sun"></span> <span id="themeLabel">Tema claro</span></button>
         </div>
-        <div class="copyright">BIBLIOTECA PERSONAL · 2026<br>Sin cuentas. Sin suscripciones.</div>
       </div>
     </aside>
     <div class="content-shell">
@@ -38,18 +38,17 @@
         <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Abrir navegación" aria-expanded="false"><span data-ui-icon="menu"></span></button>
         <div class="breadcrumbs" id="breadcrumbs">Tu biblioteca <span class="crumb-arrow">/</span> Inicio</div>
         <div class="topbar-right">
-          <label class="search-box" for="globalSearch"><span data-ui-icon="search"></span><input id="globalSearch" type="search" placeholder="Buscar libros, ideas, recursos..." autocomplete="off" aria-label="Buscar recursos"><kbd>/</kbd></label>
+          <label class="search-box" for="globalSearch"><span data-ui-icon="search"></span><input id="globalSearch" type="search" placeholder="Buscar por título, autor o tema" autocomplete="off" aria-label="Buscar recursos"><kbd>/</kbd></label>
           <button class="top-add" id="newResourceBtn" type="button"><span data-ui-icon="plus"></span><span>Añadir recurso</span></button>
         </div>
       </header>
       <main id="main" tabindex="-1"><div id="root"></div></main>
-      <footer class="footer"><span>Tu conocimiento, a tu ritmo.</span><span>El progreso se guarda en este navegador. <button id="footerExport" type="button">Crear respaldo</button></span></footer>
+      <footer class="footer">El progreso se guarda en este navegador. <button id="footerExport" type="button">Exportar respaldo</button></footer>
     </div>
   </div>
   <dialog class="modal" id="detailsDialog" aria-labelledby="detailsTitle">
     <form method="dialog" class="modal-frame" id="detailsForm">
       <button type="button" class="dialog-close" id="closeDetails" aria-label="Cerrar">×</button>
-      <div class="modal-eyebrow">FICHA DE LECTURA</div>
       <h2 id="detailsTitle"></h2>
       <p id="detailsSub" class="modal-sub"></p>
       <p id="detailsWhy" class="modal-desc"></p>
@@ -57,20 +56,19 @@
       <select id="detailsStatus" class="field-control"><option value="pending">Pendiente</option><option value="reading">En curso</option><option value="done">Terminado</option></select>
       <label for="detailsNotes" class="field-label">Notas personales</label>
       <textarea id="detailsNotes" class="field-control notes-box" rows="6" placeholder="Ideas clave, citas breves, dudas, aplicaciones prácticas..."></textarea>
-      <div class="dialog-actions"><button class="btn secondary" id="detailsRemove" type="button" hidden>Eliminar recurso propio</button><button class="btn primary" id="saveDetails" type="button">Guardar ficha</button></div>
+      <div class="dialog-actions"><button class="btn secondary" id="detailsRemove" type="button" hidden>Eliminar recurso propio</button><button class="btn primary" id="saveDetails" type="button">Guardar</button></div>
     </form>
   </dialog>
   <dialog class="modal" id="newDialog" aria-labelledby="newTitle">
     <form class="modal-frame" id="newForm">
       <button type="button" class="dialog-close" id="closeNew" aria-label="Cerrar">×</button>
-      <div class="modal-eyebrow">AMPLIAR TU BIBLIOTECA</div>
       <h2 id="newTitle">Añadir un recurso</h2>
       <p class="modal-sub">Guardado solo en este navegador y en tus respaldos JSON.</p>
-      <label for="newName" class="field-label">Título *</label><input id="newName" class="field-control" required maxlength="180" placeholder="Nombre del libro, curso o recurso">
+      <label for="newName" class="field-label">Título</label><input id="newName" class="field-control" required maxlength="180" placeholder="Nombre del libro, curso o recurso">
       <label for="newAuthor" class="field-label">Autor o fuente</label><input id="newAuthor" class="field-control" maxlength="180" placeholder="Autor, institución, canal...">
-      <div class="form-pair"><div><label for="newArea" class="field-label">Área</label><select id="newArea" class="field-control"></select></div><div><label for="newPriority" class="field-label">Importancia</label><select id="newPriority" class="field-control"><option value="1">P1 — Esencial</option><option value="2">P2 — Importante</option><option value="3">P3 — Profundización</option></select></div></div>
-      <div class="form-pair"><div><label for="newKind" class="field-label">Tipo</label><select id="newKind" class="field-control"><option>Libro</option><option>Curso</option><option>Artículo</option><option>Canal</option><option>Herramienta</option><option>Repositorio</option><option>Comunidad</option><option>Otro</option></select></div><div><label for="newUrl" class="field-label">Enlace (opcional)</label><input id="newUrl" class="field-control" type="url" placeholder="https://..."></div></div>
-      <label for="newWhy" class="field-label">Por qué es útil</label><textarea id="newWhy" class="field-control" rows="3" maxlength="350" placeholder="Qué aprenderás con este recurso"></textarea>
+      <div class="form-pair"><div><label for="newArea" class="field-label">Área</label><select id="newArea" class="field-control"></select></div><div><label for="newPriority" class="field-label">Importancia</label><select id="newPriority" class="field-control"><option value="1">Esencial</option><option value="2">Importante</option><option value="3">Profundización</option></select></div></div>
+      <div class="form-pair"><div><label for="newKind" class="field-label">Tipo</label><select id="newKind" class="field-control"><option>Libro</option><option>Curso</option><option>Artículo</option><option>Canal</option><option>Herramienta</option><option>Repositorio</option><option>Comunidad</option><option>Otro</option></select></div><div><label for="newUrl" class="field-label">Enlace, si tiene</label><input id="newUrl" class="field-control" type="url" placeholder="https://..."></div></div>
+      <label for="newWhy" class="field-label">Por qué es útil</label><textarea id="newWhy" class="field-control" rows="3" maxlength="350" placeholder="Qué te aporta, en una o dos líneas"></textarea>
       <div class="dialog-actions"><button class="btn primary" type="submit">Guardar recurso</button></div>
     </form>
   </dialog>
